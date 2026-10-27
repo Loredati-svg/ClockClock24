@@ -1,10 +1,22 @@
 # ClockClock 24 – Replica v2
 
+![Status](https://img.shields.io/badge/status-in%20progress-orange)
+![Hardware](https://img.shields.io/badge/hardware-rev%20A-blue)
+![KiCad](https://img.shields.io/badge/KiCad-10-314CB0?logo=kicad&logoColor=white)
+![MCU](https://img.shields.io/badge/MCU-ESP32--S3-E7352C?logo=espressif&logoColor=white)
+![Firmware](https://img.shields.io/badge/firmware-not%20started-lightgrey)
+
 A personal re-implementation of the **ClockClock 24** kinetic sculpture by [Humans Since 1982](https://www.humanssince1982.com/): 24 analog clocks in a 3 × 8 grid whose hands move together to show the time in digital form.
 
 Inspired by [Vallasc/clockclock24-replica](https://github.com/Vallasc/clockclock24-replica), with a redesigned architecture: ESP32-S3 controllers, USB-C on every board, an auto-addressed I2C bus and separate motor boards.
 
 > For personal, non-commercial use only. All design rights belong to Humans Since 1982.
+
+<p align="center">
+  <img width="500" alt="Controller board – top" src="Images/3D_Top.png" />
+  <img width="500" alt="Controller board – bottom" src="Images/3D_Bottom.png" />
+</p>
+<p align="center"><em>Controller board, rev A (3D render, top and bottom)</em></p>
 
 ## Architecture
 
@@ -16,9 +28,15 @@ Inspired by [Vallasc/clockclock24-replica](https://github.com/Vallasc/clockclock
 - The **first board in the chain** becomes the **master**: WiFi, NTP, web interface, and it sends target positions to the others over I2C.
 - Each controller generates step pulses for its own motors, so only short, slow messages travel on the bus.
 
-**Controller board:** USB-C (5 V, programming + debug via native USB) → protection → +5 V rail → 2× VID6606 drivers and the bus; AP7361C LDO → 3.3 V for the ESP32-S3-WROOM-1-N8.
+### Controller board – rev A (layout in review)
 
-**Motor board:** one VID28-05 / BKA30D-R5 dual-shaft stepper (two motors, coaxial shafts, one hand each) and one 8-pin connector. No active parts.
+USB-C (5 V, programming + debug via native USB) → protection → +5 V rail → 2× VID6606 drivers and the bus; AP7361C LDO → 3.3 V for the ESP32-S3-WROOM-1-N8.
+
+### Motor board – in development
+
+A minimal board with only the motor and its connector: one VID28-05 / BKA30D-R5 dual-shaft stepper (two motors, coaxial shafts, one hand each) and one 8-pin connector. No active parts.
+
+Public documentation on this motor is scarce (mechanical drawings, pin numbering and the 360° no-stop variant all differ between sellers), so the footprint and pinout are being validated on real samples before the board is finalized.
 
 ## Bus and master detection
 
