@@ -10,7 +10,7 @@ Inspired by [Vallasc/clockclock24-replica](https://github.com/Vallasc/clockclock
 
 **6 identical controller boards** (2 per row), each driving **4 clocks (8 motors)** via cables to **24 passive motor boards**, one behind each clock.
 
-![Architecture](docs/architecture.svg)
+![Architecture](Images/architecture.svg)
 
 - Same hardware and firmware on every controller.
 - The **first board in the chain** becomes the **master**: WiFi, NTP, web interface, and it sends target positions to the others over I2C.
@@ -24,7 +24,7 @@ Inspired by [Vallasc/clockclock24-replica](https://github.com/Vallasc/clockclock
 
 The bus connectors carry `+5V`, `GND`, `I2C_SDA` (IO41), `I2C_SCL` (IO42) and a `CHAIN` line.
 
-![Master detection](docs/chain.svg)
+![Master detection](Images/chain.svg)
 
 - Nothing on `BUS_IN` → `CHAIN_IN` high → **master**. Cable present → low → **slave**, even if the upstream board is still booting.
 - At startup the master passes a "token" down the chain via `CHAIN_OUT`. Each board answers on a temporary I2C address and receives its permanent one, so addresses match the physical order automatically.
