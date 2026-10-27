@@ -41,3 +41,15 @@ fp-info-cache
 
 # Local project settings
 *.kicad_prl
+
+# KiCad
+*-backups/
+*.kicad_prl
+*.lck
+fp-info-cache
+_autosave-*
+\#auto_saved_files\#
+
+# PlatformIO
+.pio/
+.vscode/

@@ -10,16 +10,7 @@ Inspired by [Vallasc/clockclock24-replica](https://github.com/Vallasc/clockclock
 
 **6 identical controller boards** (2 per row), each driving **4 clocks (8 motors)** via cables to **24 passive motor boards**, one behind each clock.
 
-```
-Row 1:  [M][M][M][M] ← CTRL 0 (master) ──BUS──▶ CTRL 1 → [M][M][M][M]
-                                                   │
-Row 2:  [M][M][M][M] ← CTRL 3 ◀──BUS── CTRL 2 → [M][M][M][M]
-          │
-Row 3:  [M][M][M][M] ← CTRL 4 ──BUS──▶ CTRL 5 → [M][M][M][M]
-
-[M]  = motor board (VID28-05 + JST-PH connector)
-CTRL = controller board (ESP32-S3 + 2× VID6606)
-```
+![Architecture](docs/architecture.svg)
 
 - Same hardware and firmware on every controller.
 - The **first board in the chain** becomes the **master**: WiFi, NTP, web interface, and it sends target positions to the others over I2C.
@@ -33,12 +24,7 @@ CTRL = controller board (ESP32-S3 + 2× VID6606)
 
 The bus connectors carry `+5V`, `GND`, `I2C_SDA` (IO41), `I2C_SCL` (IO42) and a `CHAIN` line.
 
-```
-Board N                                   Board N+1
-IO48 ── 330 Ω ──┬── CHAIN_OUT ═══cable═══ CHAIN_IN ──┬── IO3
-              10 kΩ                               100 kΩ
-               GND                                 +3V3
-```
+![Master detection](docs/chain.svg)
 
 - Nothing on `BUS_IN` → `CHAIN_IN` high → **master**. Cable present → low → **slave**, even if the upstream board is still booting.
 - At startup the master passes a "token" down the chain via `CHAIN_OUT`. Each board answers on a temporary I2C address and receives its permanent one, so addresses match the physical order automatically.

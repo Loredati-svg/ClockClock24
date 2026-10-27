@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="330" viewBox="0 0 940 330" font-family="Helvetica, Arial, sans-serif" font-size="14">
+  <rect width="940" height="330" fill="#FFFFFF"/>
+
+  <!-- Board containers -->
+  <rect x="20" y="20" width="410" height="230" rx="12" fill="#F7F6F2" stroke="#888780" stroke-dasharray="6 4"/>
+  <text x="36" y="44" font-weight="bold" fill="#444441">Board N</text>
+  <rect x="510" y="20" width="410" height="230" rx="12" fill="#F7F6F2" stroke="#888780" stroke-dasharray="6 4"/>
+  <text x="526" y="44" font-weight="bold" fill="#444441">Board N+1</text>
+
+  <!-- ===== Board N ===== -->
+  <!-- ESP pin -->
+  <rect x="40" y="96" width="70" height="32" rx="4" fill="#EEEDFE" stroke="#534AB7"/>
+  <text x="75" y="117" text-anchor="middle" fill="#3C3489">IO48</text>
+  <!-- wire to R10 -->
+  <line x1="110" y1="112" x2="150" y2="112" stroke="#0F6E56" stroke-width="2"/>
+  <!-- R10 330 -->
+  <rect x="150" y="103" width="50" height="18" fill="#FFFFFF" stroke="#2C2C2A" stroke-width="1.5"/>
+  <text x="175" y="94" text-anchor="middle" fill="#444441">330 Ω</text>
+  <!-- wire to node and connector -->
+  <line x1="200" y1="112" x2="350" y2="112" stroke="#0F6E56" stroke-width="2"/>
+  <circle cx="260" cy="112" r="4" fill="#0F6E56"/>
+  <!-- pull-down 10k -->
+  <line x1="260" y1="112" x2="260" y2="140" stroke="#0F6E56" stroke-width="2"/>
+  <rect x="251" y="140" width="18" height="46" fill="#FFFFFF" stroke="#2C2C2A" stroke-width="1.5"/>
+  <text x="278" y="168" fill="#444441">10 kΩ</text>
+  <line x1="260" y1="186" x2="260" y2="210" stroke="#0F6E56" stroke-width="2"/>
+  <!-- GND symbol -->
+  <path d="M246 210H274L260 226Z" fill="none" stroke="#2C2C2A" stroke-width="1.5"/>
+  <text x="260" y="244" text-anchor="middle" font-size="12" fill="#444441">GND</text>
+  <!-- connector BUS_OUT -->
+  <rect x="350" y="92" width="70" height="40" rx="4" fill="#E6F1FB" stroke="#185FA5"/>
+  <text x="385" y="109" text-anchor="middle" font-size="12" fill="#0C447C">BUS_OUT</text>
+  <text x="385" y="124" text-anchor="middle" font-size="11" fill="#185FA5">pin 7</text>
+  <text x="308" y="104" text-anchor="middle" font-size="12" fill="#0F6E56">CHAIN_OUT</text>
+
+  <!-- ===== Cable ===== -->
+  <line x1="420" y1="112" x2="520" y2="112" stroke="#185FA5" stroke-width="5"/>
+  <text x="470" y="100" text-anchor="middle" fill="#185FA5">cable</text>
+
+  <!-- ===== Board N+1 ===== -->
+  <rect x="520" y="92" width="70" height="40" rx="4" fill="#E6F1FB" stroke="#185FA5"/>
+  <text x="555" y="109" text-anchor="middle" font-size="12" fill="#0C447C">BUS_IN</text>
+  <text x="555" y="124" text-anchor="middle" font-size="11" fill="#185FA5">pin 7</text>
+  <line x1="590" y1="112" x2="820" y2="112" stroke="#0F6E56" stroke-width="2"/>
+  <text x="640" y="132" text-anchor="middle" font-size="12" fill="#0F6E56">CHAIN_IN</text>
+  <circle cx="720" cy="112" r="4" fill="#0F6E56"/>
+  <!-- pull-up 100k to +3V3 -->
+  <line x1="720" y1="112" x2="720" y2="100" stroke="#0F6E56" stroke-width="2"/>
+  <rect x="711" y="54" width="18" height="46" fill="#FFFFFF" stroke="#2C2C2A" stroke-width="1.5"/>
+  <text x="738" y="82" fill="#444441">100 kΩ</text>
+  <line x1="720" y1="54" x2="720" y2="42" stroke="#0F6E56" stroke-width="2"/>
+  <line x1="706" y1="42" x2="734" y2="42" stroke="#2C2C2A" stroke-width="2"/>
+  <text x="742" y="47" font-size="12" fill="#444441">+3V3</text>
+  <!-- ESP pin -->
+  <rect x="820" y="96" width="70" height="32" rx="4" fill="#EEEDFE" stroke="#534AB7"/>
+  <text x="855" y="117" text-anchor="middle" fill="#3C3489">IO3</text>
+
+  <!-- ===== Notes ===== -->
+  <text x="20" y="282" fill="#2C2C2A"><tspan font-weight="bold">No cable on BUS_IN</tspan> → CHAIN_IN pulled up to 3.3 V → board is the <tspan font-weight="bold" fill="#534AB7">master</tspan></text>
+  <text x="20" y="306" fill="#2C2C2A"><tspan font-weight="bold">Cable present</tspan> → 10 kΩ pull-down wins (~0.3 V) → <tspan font-weight="bold" fill="#0F6E56">slave</tspan>, even if board N is still booting</text>
+</svg>

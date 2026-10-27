@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="640" viewBox="0 0 1100 640" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="ab" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M1 1L9 5L1 9z" fill="#185FA5"/>
+    </marker>
+    <marker id="ao" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M1 1L9 5L1 9z" fill="#D85A30"/>
+    </marker>
+    <g id="clock">
+      <circle r="28" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1.5"/>
+      <line x1="0" y1="0" x2="0" y2="-19" stroke="#2C2C2A" stroke-width="3" stroke-linecap="round"/>
+      <line x1="0" y1="0" x2="15" y2="9" stroke="#2C2C2A" stroke-width="3" stroke-linecap="round"/>
+      <circle r="3" fill="#2C2C2A"/>
+    </g>
+  </defs>
+
+  <rect width="1100" height="640" fill="#FFFFFF"/>
+
+  <!-- Power input -->
+  <text x="450" y="38" text-anchor="middle" font-size="14" fill="#444441">USB-C 5 V</text>
+  <line x1="450" y1="46" x2="450" y2="101" stroke="#444441" stroke-width="2" marker-end="url(#ab)"/>
+
+
+  <!-- ===== Motor cables (drawn first, under boxes) ===== -->
+  <g fill="none" stroke="#D85A30" stroke-width="1.8" stroke-dasharray="6 4">
+    <!-- row 1 -->
+    <path d="M70 158V178M150 158V178M230 158V178M310 158V178M70 178H355V140H378"/>
+    <path d="M790 158V178M870 158V178M950 158V178M1030 158V178M1030 178H745V140H722"/>
+    <!-- row 2 -->
+    <path d="M70 338V358M150 338V358M230 338V358M310 338V358M70 358H355V320H378"/>
+    <path d="M790 338V358M870 338V358M950 338V358M1030 338V358M1030 358H745V320H722"/>
+    <!-- row 3 -->
+    <path d="M70 518V538M150 518V538M230 518V538M310 518V538M70 538H355V500H378"/>
+    <path d="M790 518V538M870 518V538M950 518V538M1030 518V538M1030 538H745V500H722"/>
+  </g>
+
+  <!-- ===== Clocks ===== -->
+  <g>
+    <use href="#clock" x="70" y="130"/><use href="#clock" x="150" y="130"/><use href="#clock" x="230" y="130"/><use href="#clock" x="310" y="130"/>
+    <use href="#clock" x="790" y="130"/><use href="#clock" x="870" y="130"/><use href="#clock" x="950" y="130"/><use href="#clock" x="1030" y="130"/>
+    <use href="#clock" x="70" y="310"/><use href="#clock" x="150" y="310"/><use href="#clock" x="230" y="310"/><use href="#clock" x="310" y="310"/>
+    <use href="#clock" x="790" y="310"/><use href="#clock" x="870" y="310"/><use href="#clock" x="950" y="310"/><use href="#clock" x="1030" y="310"/>
+    <use href="#clock" x="70" y="490"/><use href="#clock" x="150" y="490"/><use href="#clock" x="230" y="490"/><use href="#clock" x="310" y="490"/>
+    <use href="#clock" x="790" y="490"/><use href="#clock" x="870" y="490"/><use href="#clock" x="950" y="490"/><use href="#clock" x="1030" y="490"/>
+  </g>
+
+  <!-- ===== Bus (daisy chain) ===== -->
+  <g stroke="#185FA5" stroke-width="3" fill="none">
+    <line x1="520" y1="130" x2="576" y2="130" marker-end="url(#ab)"/>
+    <line x1="650" y1="158" x2="650" y2="279" marker-end="url(#ab)"/>
+    <line x1="580" y1="310" x2="524" y2="310" marker-end="url(#ab)"/>
+    <line x1="450" y1="338" x2="450" y2="459" marker-end="url(#ab)"/>
+    <line x1="520" y1="490" x2="576" y2="490" marker-end="url(#ab)"/>
+  </g>
+
+  <!-- ===== Controllers ===== -->
+  <g font-size="14" text-anchor="middle">
+    <!-- master -->
+    <rect x="380" y="102" width="140" height="56" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="2"/>
+    <text x="450" y="125" font-weight="bold" fill="#3C3489">CTRL 0 · master</text>
+    <text x="450" y="145" font-size="12" fill="#534AB7">ESP32-S3 · WiFi</text>
+
+    <rect x="580" y="102" width="140" height="56" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1.5"/>
+    <text x="650" y="125" font-weight="bold" fill="#085041">CTRL 1 · slave</text>
+    <text x="650" y="145" font-size="12" fill="#0F6E56">ESP32-S3</text>
+
+    <rect x="580" y="282" width="140" height="56" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1.5"/>
+    <text x="650" y="305" font-weight="bold" fill="#085041">CTRL 2 · slave</text>
+    <text x="650" y="325" font-size="12" fill="#0F6E56">ESP32-S3</text>
+
+    <rect x="380" y="282" width="140" height="56" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1.5"/>
+    <text x="450" y="305" font-weight="bold" fill="#085041">CTRL 3 · slave</text>
+    <text x="450" y="325" font-size="12" fill="#0F6E56">ESP32-S3</text>
+
+    <rect x="380" y="462" width="140" height="56" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1.5"/>
+    <text x="450" y="485" font-weight="bold" fill="#085041">CTRL 4 · slave</text>
+    <text x="450" y="505" font-size="12" fill="#0F6E56">ESP32-S3</text>
+
+    <rect x="580" y="462" width="140" height="56" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1.5"/>
+    <text x="650" y="485" font-weight="bold" fill="#085041">CTRL 5 · slave</text>
+    <text x="650" y="505" font-size="12" fill="#0F6E56">ESP32-S3</text>
+  </g>
+
+  <!-- ===== Legend ===== -->
+  <g font-size="13" fill="#444441">
+    <line x1="40" y1="600" x2="85" y2="600" stroke="#185FA5" stroke-width="3"/>
+    <text x="93" y="604">Bus: +5V, GND, I2C, CHAIN</text>
+    <line x1="300" y1="600" x2="345" y2="600" stroke="#D85A30" stroke-width="1.8" stroke-dasharray="6 4"/>
+    <text x="353" y="604">Motor cable (8 wires)</text>
+    <use href="#clock" transform="translate(530 600) scale(0.5)"/>
+    <text x="551" y="604">Motor board (VID28-05)</text>
+    <rect x="740" y="591" width="22" height="18" rx="3" fill="#E1F5EE" stroke="#0F6E56"/>
+    <text x="770" y="604">Controller: ESP32-S3 + 2× VID6606</text>
+  </g>
+</svg>
