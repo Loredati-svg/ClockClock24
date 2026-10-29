@@ -1,0 +1,178 @@
+{
+  "Header": {
+    "GenerationSoftware": {
+      "Vendor": "KiCad",
+      "Application": "Pcbnew",
+      "Version": "10.0.5"
+    },
+    "CreationDate": "2026-10-29T21:40:35+01:00"
+  },
+  "GeneralSpecs": {
+    "ProjectId": {
+      "Name": "ClockClock24",
+      "GUID": "436c6f63-6b43-46c6-9f63-6b32342e6b69",
+      "Revision": "rev?"
+    },
+    "Size": {
+      "X": 78.925,
+      "Y": 51.05
+    },
+    "LayerNumber": 4,
+    "BoardThickness": 1.5982,
+    "Finish": "None",
+    "ImpedanceControlled": true
+  },
+  "DesignRules": [
+    {
+      "Layers": "Outer",
+      "PadToPad": 0.18,
+      "PadToTrack": 0.18,
+      "TrackToTrack": 0.18,
+      "MinLineWidth": 0.2,
+      "TrackToRegion": 0.2,
+      "RegionToRegion": 0.2
+    },
+    {
+      "Layers": "Inner",
+      "PadToPad": 0.0,
+      "PadToTrack": 0.0,
+      "TrackToTrack": 0.18,
+      "TrackToRegion": 0.2,
+      "RegionToRegion": 0.2
+    }
+  ],
+  "FilesAttributes": [
+    {
+      "Path": "ClockClock24-Top.gbr",
+      "FileFunction": "Copper,L1,Top",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "ClockClock24-GND.gbr",
+      "FileFunction": "Copper,L2,Inr",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "ClockClock24-PWR.gbr",
+      "FileFunction": "Copper,L3,Inr",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "ClockClock24-Bot.gbr",
+      "FileFunction": "Copper,L4,Bot",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "ClockClock24-F_Paste.gbr",
+      "FileFunction": "SolderPaste,Top",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "ClockClock24-B_Paste.gbr",
+      "FileFunction": "SolderPaste,Bot",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "ClockClock24-F_Silkscreen.gbr",
+      "FileFunction": "Legend,Top",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "ClockClock24-B_Silkscreen.gbr",
+      "FileFunction": "Legend,Bot",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "ClockClock24-F_Mask.gbr",
+      "FileFunction": "SolderMask,Top",
+      "FilePolarity": "Negative"
+    },
+    {
+      "Path": "ClockClock24-B_Mask.gbr",
+      "FileFunction": "SolderMask,Bot",
+      "FilePolarity": "Negative"
+    },
+    {
+      "Path": "ClockClock24-Edge_Cuts.gbr",
+      "FileFunction": "Profile",
+      "FilePolarity": "Positive"
+    }
+  ],
+  "MaterialStackup": [
+    {
+      "Type": "Legend",
+      "Name": "Top Silk Screen"
+    },
+    {
+      "Type": "SolderPaste",
+      "Name": "Top Solder Paste"
+    },
+    {
+      "Type": "SolderMask",
+      "Color": "Black",
+      "Thickness": 0.01,
+      "Name": "Top Solder Mask"
+    },
+    {
+      "Type": "Copper",
+      "Thickness": 0.035,
+      "Name": "Top"
+    },
+    {
+      "Type": "Dielectric",
+      "Thickness": 0.2064,
+      "Material": "FR4",
+      "DielectricConstant": "4,1",
+      "LossTangent": "0,02",
+      "Name": "Top/GND",
+      "Notes": "Type: dielectric layer 1 (from Top to GND)"
+    },
+    {
+      "Type": "Copper",
+      "Thickness": 0.0152,
+      "Name": "GND"
+    },
+    {
+      "Type": "Dielectric",
+      "Thickness": 1.065,
+      "Material": "FR4",
+      "DielectricConstant": "4,5",
+      "LossTangent": "0,02",
+      "Name": "GND/PWR",
+      "Notes": "Type: dielectric layer 2 (from GND to PWR)"
+    },
+    {
+      "Type": "Copper",
+      "Thickness": 0.0152,
+      "Name": "PWR"
+    },
+    {
+      "Type": "Dielectric",
+      "Thickness": 0.2064,
+      "Material": "FR4",
+      "DielectricConstant": "4,1",
+      "LossTangent": "0,02",
+      "Name": "PWR/Bot",
+      "Notes": "Type: dielectric layer 3 (from PWR to Bot)"
+    },
+    {
+      "Type": "Copper",
+      "Thickness": 0.035,
+      "Name": "Bot"
+    },
+    {
+      "Type": "SolderMask",
+      "Color": "Black",
+      "Thickness": 0.01,
+      "Name": "Bottom Solder Mask"
+    },
+    {
+      "Type": "SolderPaste",
+      "Name": "Bottom Solder Paste"
+    },
+    {
+      "Type": "Legend",
+      "Name": "Bottom Silk Screen"
+    }
+  ]
+}

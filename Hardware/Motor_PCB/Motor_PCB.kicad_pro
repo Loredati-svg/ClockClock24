@@ -524,7 +524,7 @@
     "last_paths": {
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "Fab/",
       "specctra_dsn": "",
       "step": "",
       "vrml": ""

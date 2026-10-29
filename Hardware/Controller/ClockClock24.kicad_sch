@@ -9921,6 +9921,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C98220"
+			(at 212.09 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "a1c448d5-772e-4d39-83b0-a0794e5331c7")
 		)
@@ -10150,6 +10161,17 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 161.29 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C66501"
 			(at 161.29 193.04 0)
 			(hide yes)
 			(show_name no)
@@ -10553,6 +10575,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C98220"
+			(at 133.35 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "71a7cc6f-690d-41a4-9a33-26bf2cacaa83")
 		)
@@ -10625,6 +10658,17 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 341.63 200.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C157974"
 			(at 341.63 200.66 0)
 			(hide yes)
 			(show_name no)
@@ -10734,6 +10778,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C23186"
+			(at 86.36 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "42dd05f8-d2fb-4b88-b618-88813e5e72ab")
 		)
@@ -10808,6 +10863,17 @@
 			)
 		)
 		(property "Description" "Very low capacitance ESD protection diode, 2 data-line, SOT-23-6"
+			(at 116.84 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C7519"
 			(at 116.84 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -10912,6 +10978,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C98220"
+			(at 246.38 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "6028787f-d398-44c5-9d44-3114f82deb9d")
 		)
@@ -10993,6 +11070,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C7469933"
+			(at 151.13 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "8b68d1a9-69ad-466d-b1df-ee75f34e2038")
 		)
@@ -11063,6 +11151,17 @@
 			)
 		)
 		(property "Description" "USB 2.0-only 16P Type-C Receptacle connector"
+			(at 54.61 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C165948"
 			(at 54.61 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -11189,6 +11288,17 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 78.74 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C23186"
 			(at 78.74 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -11429,6 +11539,17 @@
 			)
 		)
 		(property "Description" "RF Module, ESP32-S3 SoC, Wi-Fi 802.11b/g/n, Bluetooth, BLE, 32-bit, 3.3V, onboard antenna, SMD"
+			(at 186.69 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C2913198"
 			(at 186.69 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -11953,6 +12074,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C19666"
+			(at 309.88 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "83885401-462c-4d89-9b20-4023e13009c3")
 		)
@@ -12270,6 +12402,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C231329"
+			(at 257.81 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "6178015a-aaa2-41a2-8aa0-70efb94b7d74")
 		)
@@ -12431,6 +12574,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C66501"
+			(at 69.85 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "f83173db-07c6-4cf6-832c-057e2cadae6a")
 		)
@@ -12502,6 +12656,17 @@
 			)
 		)
 		(property "Description" "Polarized capacitor"
+			(at 59.69 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C7469933"
 			(at 59.69 191.77 0)
 			(hide yes)
 			(show_name no)
@@ -12662,6 +12827,17 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 382.27 200.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C157974"
 			(at 382.27 200.66 0)
 			(hide yes)
 			(show_name no)
@@ -12847,6 +13023,17 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 148.59 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C22371297"
 			(at 148.59 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -13252,6 +13439,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C157974"
+			(at 341.63 224.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "4"
 			(uuid "490803f4-a902-459e-8434-03b0dd71f0ea")
 		)
@@ -13585,6 +13783,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C105881"
+			(at 120.65 113.03 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "b84d708d-dfca-4cb7-af0f-3926ef246acd")
 		)
@@ -13657,6 +13866,17 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 334.01 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C19666"
 			(at 334.01 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -13740,6 +13960,17 @@
 		)
 		(property "Description" "400W unidirectional Transient Voltage Suppressor, 5.0Vr, SMA(DO-214AC)"
 			(at 92.71 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C113952"
+			(at 92.71 68.58 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14146,6 +14377,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C14675"
+			(at 219.71 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "28a312e4-6a70-4163-81fe-5db888e60a97")
 		)
@@ -14218,6 +14460,17 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 194.31 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C19702"
 			(at 194.31 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -14456,6 +14709,17 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 203.2 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C66501"
 			(at 203.2 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -14784,6 +15048,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C1592"
+			(at 246.38 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "03fdc155-3597-4dcb-83ac-8802197ec966")
 		)
@@ -14934,6 +15209,17 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 226.06 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C1592"
 			(at 226.06 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -15102,6 +15388,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C22548"
+			(at 148.59 123.19 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "71099b68-f84d-465e-82b8-6555c2405208")
 		)
@@ -15174,6 +15471,17 @@
 		)
 		(property "Description" "Resettable fuse, polymeric positive temperature coefficient"
 			(at 76.2 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C269119"
+			(at 76.2 62.23 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15265,6 +15573,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C66501"
+			(at 130.81 240.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "44be0b1a-8703-4237-b06a-00d7d21a9cee")
 		)
@@ -15337,6 +15656,17 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 303.53 224.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C157972"
 			(at 303.53 224.79 0)
 			(hide yes)
 			(show_name no)
@@ -15687,6 +16017,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C98220"
+			(at 231.14 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "121f5310-5673-4087-821b-3aeb030043f4")
 		)
@@ -15847,6 +16188,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C157974"
+			(at 382.27 224.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "4"
 			(uuid "06762fd2-308f-4479-94a2-00139dc8c30f")
 		)
@@ -15937,6 +16289,17 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 222.25 241.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C66501"
 			(at 222.25 241.3 0)
 			(hide yes)
 			(show_name no)
@@ -16272,6 +16635,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C99782"
+			(at 129.54 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "983ff051-3dd7-4dd5-9edc-57df18be03c3")
 		)
@@ -16511,6 +16885,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C157972"
+			(at 303.53 200.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "4"
 			(uuid "d60d7ab8-9dbb-4098-8065-0571bc9a01ee")
 		)
@@ -16609,6 +16994,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C231329"
+			(at 234.95 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "8e87ff41-2fa1-4702-bae3-3f45bf563798")
 		)
@@ -16680,6 +17076,17 @@
 			)
 		)
 		(property "Description" "1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223"
+			(at 321.31 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C500795"
 			(at 321.31 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -16763,6 +17170,17 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 140.97 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C99782"
 			(at 140.97 67.31 0)
 			(hide yes)
 			(show_name no)
